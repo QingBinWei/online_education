@@ -21,7 +21,7 @@ public class VodServiceImpl implements VodService {
     @Override
     public String uploadVideoAly(MultipartFile file) {
         try {
-            String accessKeyId = "LTAI4GCnvkuz3KhPD9djkYS4";
+            String accessKeyId = "替换你的密钥";
             String accessKeySecret = "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj";
             String title=file.getOriginalFilename().substring(0, file.getOriginalFilename().lastIndexOf(".")-1); //上传后文件名
             String fileName=file.getOriginalFilename();  //原文件名
@@ -50,7 +50,7 @@ public class VodServiceImpl implements VodService {
             DeleteVideoRequest request = new DeleteVideoRequest();
             //支持传入多个视频ID，多个用逗号分隔
             request.setVideoIds(id);
-            DefaultAcsClient client =  initVodClient("LTAI4GCnvkuz3KhPD9djkYS4", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
+            DefaultAcsClient client =  initVodClient("替换你的密钥", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
             DeleteVideoResponse response = new DeleteVideoResponse();
             response=client.getAcsResponse(request);
         }catch (Exception e){

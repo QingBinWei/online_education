@@ -13,7 +13,7 @@ import com.aliyuncs.profile.DefaultProfile;
 public class demo {
     public static void main(String[] args) {
         DefaultProfile profile =
-                DefaultProfile.getProfile("cn-shanghai", "LTAI4GCnvkuz3KhPD9djkYS4", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
+                DefaultProfile.getProfile("cn-shanghai", "替换你的密钥", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();

@@ -23,7 +23,7 @@ public class MsmServiceimpl implements MsmService {
         if(StringUtils.isEmpty(phone)) return false;
 
         DefaultProfile profile =
-                DefaultProfile.getProfile("default", "LTAI4GCnvkuz3KhPD9djkYS4", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
+                DefaultProfile.getProfile("default", "替换你的密钥", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
         IAcsClient client = new DefaultAcsClient(profile);
         //设置相关固定的参数
         CommonRequest request = new CommonRequest();

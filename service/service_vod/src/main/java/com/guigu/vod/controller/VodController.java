@@ -36,7 +36,7 @@ public class VodController {
     @GetMapping("getAuth/{videoId}")
     public ReturnResult getPlayAuth(@PathVariable String videoId) throws Exception{
         String regionId = "cn-shanghai";  // 点播服务接入区域
-        DefaultProfile profile = DefaultProfile.getProfile(regionId, "LTAI4GCnvkuz3KhPD9djkYS4", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
+        DefaultProfile profile = DefaultProfile.getProfile(regionId, "替换你的密钥", "HnjJjtpysSXtIFZZ14DFS7gNXOwVqj");
         DefaultAcsClient client = new DefaultAcsClient(profile);
         GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
         request.setVideoId(videoId);

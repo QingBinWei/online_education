@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConstantVodUtils implements InitializingBean {
 
-    @Value("LTAI4GCnvkuz3KhPD9djkYS4")
+    @Value("替换你的密钥")
     private String keyid;
 
     @Value("HnjJjtpysSXtIFZZ14DFS7gNXOwVqj")
